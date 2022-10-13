@@ -1,0 +1,26 @@
+{
+    "welcome" : "أهلا وسهلا",
+    "to our website" : "في موقعنا",
+    "discover" : "اكتشف",
+    "login page" : "صفحة تسجيل الدخول",
+    "username" : "اسم المستخدم" ,
+    "password" : "كلمة المرور",
+    "login" : "تسجيل الدخول" ,
+    "not a member ?" : "لست عضواً؟",
+    "Signup now" : "اشترك الان",
+    "username is required" : "اسم المستخدم مطلوب",
+    "password is required" : "كلمة المرور مطلوبة",
+    "password must be at least 8 characters" : "كلمة المرور على الاقل 8 رموز",
+    "invalid credentials— try again please!" : "البيانات غير صالحة يرجى اعادة الادخال",
+    "Search…" : "...بحث",
+    "LOGOUT": "تسجيل الخروج",
+    "Title" : "العنوان",
+    "Description" : "الموضوع",
+    "ARTICLES WEBSITE" : "موقع المقالات",
+    "contact us": "اتصل بنا",
+    "ads": "الاعلانات",
+    "policy": "السياسة",
+    "send report": "ارسل تقرير",
+    "version": "الاصدار"
+
+}

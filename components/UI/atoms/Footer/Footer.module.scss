@@ -1,0 +1,29 @@
+$color-tertiary-light: #b2d3f1;
+$color-tertiary-dark: #09487a;
+
+.footer {
+  position: sticky;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($color-tertiary-light, 0.9),
+    rgba($color-tertiary-dark, 1)
+  );
+  height: 65px;
+}
+
+.list2 {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+}
+.div {
+  cursor: pointer;
+  color: #001324dc;
+  &:hover {
+    font-weight: bold;
+    font-size: 17px;
+  }
+}

@@ -1,0 +1,26 @@
+{
+    "welcome" : "أهلا وسهلا",
+    "welcome_msg1" : "في موقعنا",
+    "discover" : "اكتشف",
+    "welcome_msg2" : "صفحة تسجيل الدخول",
+    "username" : "اسم المستخدم" ,
+    "password" : "كلمة المرور",
+    "login" : "تسجيل الدخول" ,
+    "not_a_member_?" : "لست عضواً؟",
+    "Signup_now" : "اشترك الان",
+    "username_is_required" : "اسم المستخدم مطلوب",
+    "password_is_required" : "كلمة المرور مطلوبة",
+    "password_must_be_at_least_8_characters" : "كلمة المرور على الاقل 8 رموز",
+    "invalid_credentials,_try_again_please!" : "البيانات غير صالحة يرجى اعادة الادخال",
+    "Search…" : "...بحث",
+    "LOGOUT": "تسجيل الخروج",
+    "Title" : "العنوان",
+    "Description" : "الموضوع",
+    "ARTICLES_WEBSITE" : "موقع المقالات",
+    "contact_us": "اتصل بنا",
+    "ads": "الاعلانات",
+    "policy": "السياسة",
+    "send_report": "ارسل تقرير",
+    "version": "الاصدار"
+
+}

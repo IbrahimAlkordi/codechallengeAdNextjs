@@ -1,0 +1,26 @@
+{
+    "welcome": "WELCOME",
+    "welcome_msg1": "TO OUR WEBSITE",
+    "discover": "Discover",
+    "welcome_msg2": "Login Page",
+    "username": "username",
+    "password": "password",
+    "login": "Login",
+    "not_a_member_?": "Not a member",
+    "Signup_now": "Signup now",
+    "username_is_required": "username is required",
+    "password_is_required": "password is required",
+    "password_must_be_at_least_8_characters": "password must be at least 8 characters",
+    "invalid_credentials,_try_again_please!": "invalid credentials— try again please!",
+    "Search…": "Search…",
+    "LOGOUT": "LOGOUT",
+    "Title": "Title",
+    "Description": "Description",
+    "ARTICLES_WEBSITE": "ARTICLES WEBSITE",
+    "contact_us": "contact us",
+    "ads": "ads",
+    "policy": "policy",
+    "send_report": "send report",
+    "version": "version"
+  }
+  

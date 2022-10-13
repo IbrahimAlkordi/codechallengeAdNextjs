@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+$color-tertiary-light: #2998ff;
+$color-tertiary-dark: #0074d3;
+
+// * {
+//   // margin: 0;
+//   // padding: 0;
+//   // box-sizing: border-box;
+// }
+
+.translate {
+  display: block;
+  list-style: none;
+  margin-top: 0px;
+  padding-left: 0px;
+}
+
+.container {
+  background: #ffffff;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // margin: 0;
+  // padding: 0;
+  // box-sizing: border-box;
+
+  &_login {
+    width: 500px;
+    min-height: 450px;
+    border-radius: 3px;
+    box-shadow: 3px 3px 5px #001324dc;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-tertiary-light, 0.5),
+        rgba($color-tertiary-dark, 0.5)
+      ),
+      url(../../../../assets/images/hero.jpg);
+    background-size: auto;
+    background-position: bottom;
+  }
+
+  &_form {
+    padding: 20px 50px;
+    &_h2 {
+      text-align: center;
+      font-family: 'Righteous', cursive;
+      font-size: 45px;
+      font-weight: 500;
+      color: #fff;
+    }
+    &_textField {
+      width: 100%;
+      margin: 12px 10px;
+    }
+    &_textField input {
+      font-size: 20px;
+      // margin: 12px 10px;
+      font-weight: bold;
+    }
+    &_textField svg {
+      font-size: 25px;
+    }
+    &_error_msg {
+      color: #ff0000e0;
+      font-size: 17px;
+      font-weight: 700;
+      margin: 5px;
+      // padding: 0px;
+      text-align: center;
+    }
+    &_button {
+      background: #001324dc;
+      width: 100%;
+      line-height: 35px;
+      margin: 20px 0px;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 5px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    &_disabledbtn {
+      cursor: not-allowed;
+      background: rgba(gray, 0.8);
+      width: 100%;
+      line-height: 35px;
+      margin: 20px 9px;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 5px;
+      border: none;
+      border-radius: 5px;
+    }
+    &_loadingSpin {
+      margin-left: 150px;
+    }
+    &_alert {
+      margin-left: 60px;
+      color: red;
+      font-weight: bold;
+      font-size: 17px;
+    }
+    &_h3 {
+      text-align: center;
+      margin-top: 15px;
+      &_signup {
+        color: #ffffffde;
+        cursor: pointer;
+        margin-left: 5px;
+      }
+    }
+  }
+}

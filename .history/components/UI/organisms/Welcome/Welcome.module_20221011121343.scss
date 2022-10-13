@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+//COLORS
+$color-gray-dark :#777;
+$color-white : #fff;
+$color-black : #000;
+$color-gray-light-1 :#f7f7f7;
+$color-tertiary-light : #2998ff;
+$color-tertiary-dark : #0074d3;
+
+@mixin clearfix {
+    &::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+  }
+
+  .translate {
+    display: block;
+    list-style: none;
+    margin-top: 0px;
+  }
+
+.header {
+  height: 95vh; 
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-tertiary-light, 0.7),
+      rgba($color-tertiary-dark, 0.7)
+    ),
+    url(../../../../public/static/images/hero.jpg); 
+  background-size: cover; 
+  background-position: top;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 75vh,
+    0 100%
+  ); 
+   position: relative;
+   padding-top: 0px;
+   margin-top: 0px;
+   box-sizing: border-box;
+
+  &_title {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    text-align: center;
+  }
+
+}
+
+.heading_primary {
+  color: $color-white;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 6rem;
+
+  &_main {
+    display: block;
+    font-family: "Righteous", cursive;
+
+    font-size: 60px;
+    font-weight: 400;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+  }
+
+  &_sub {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+  }
+}
+
+.btn {
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all 0.2s;
+    position: relative;
+    font-size: 16px;
+  }
+
+  &:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.5); /*x y blur */
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &:active {
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.5); /*x y blur */
+  }
+
+  &_white {
+    background-color: $color-white;
+    color: $color-gray-dark;
+    &::after {
+      background-color: $color-white;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+
+  &_animated {
+    animation: moveInBottom   0.5s ease-out 0.75s;
+    animation-fill-mode: backwards;
+  }
+}
+
+@keyframes moveInLeft {
+    0% {
+      opacity: 0; /*starts hidden*/
+      transform: translateX(-10rem); /* x left to right */
+    }
+  
+    80% {
+      transform: translateX(1rem); /*it will go to the right side*/
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+  
+  @keyframes moveInRight {
+    0% {
+      opacity: 0; /*starts hidden*/
+      transform: translateX(10rem); /* x left to right */
+    }
+  
+    80% {
+      transform: translateX(-1rem);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+  
+  @keyframes moveInBottom {
+    0% {
+      opacity: 0; /*starts hidden*/
+      transform: translateY(3rem); /* x left to right */
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+
+
+  
+  
