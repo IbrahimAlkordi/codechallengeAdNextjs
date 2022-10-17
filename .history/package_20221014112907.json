@@ -7,9 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest",
-    "prepare": "husky install",
-    "test:ci": "jest --ci"
+    "test": "test ",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@emotion/react": "^11.10.4",
@@ -38,30 +37,11 @@
     "yup": "^0.32.11"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.19.4",
     "eslint": "8.25.0",
     "eslint-config-next": "12.3.1",
     "husky": "^8.0.1",
-    "jest": "^28.1.0",
-    "jest-environment-jsdom": "^28.1.0",
+    "jest": "^27.5.1",
     "node-sass": "^7.0.3",
     "sass": "^1.55.0"
-  },
-  "jest": {
-    "moduleNameMapper": {
-      "\\.(css|scss)$": "identity-obj-proxy",
-      "testEnvironment": "jest-environment-jsdom",
-      "verbose": true
-    }
-  },
-  "huksy": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    ".{js,jsx}": [
-      "eslint --fix"
-    ]
   }
 }

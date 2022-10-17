@@ -11,6 +11,7 @@
     "prepare": "husky install",
     "test:ci": "jest --ci"
   },
+  
   "dependencies": {
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
@@ -42,8 +43,7 @@
     "eslint": "8.25.0",
     "eslint-config-next": "12.3.1",
     "husky": "^8.0.1",
-    "jest": "^28.1.0",
-    "jest-environment-jsdom": "^28.1.0",
+    "jest": "^27.5.1",
     "node-sass": "^7.0.3",
     "sass": "^1.55.0"
   },

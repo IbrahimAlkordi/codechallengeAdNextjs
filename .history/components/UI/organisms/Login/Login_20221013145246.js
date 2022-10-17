@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { TextField, InputAdornment, IconButton } from "@mui/material";
 import { Person, Lock, VisibilityOff, Visibility } from "@mui/icons-material";
 import { useFormik } from "formik";
@@ -63,9 +63,9 @@ const Login = () => {
   return (
     <div className={classes.container}>
       <div className={classes.container_login}>
-        <ul className={classes.translate}>
+        {/* <ul className={classes.translate}>
           <Translate></Translate>
-        </ul>
+        </ul> */}
 
         <form onSubmit={formik.handleSubmit} className={classes.container_form}>
           <h2 className={classes.container_form_h2}>{t("home:login_page")}</h2>
@@ -142,7 +142,6 @@ const Login = () => {
                 : classes.container_form_button
             }
             type="submit"
-            data-testid="loginbtn"
           >
             {t("home:login")}
           </button>

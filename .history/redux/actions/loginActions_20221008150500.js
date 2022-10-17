@@ -1,4 +1,3 @@
-import React from "react"
 import actions from "../constants/action-type";
 import { LOGIN } from "../../middlewares/url";
 

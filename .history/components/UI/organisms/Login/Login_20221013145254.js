@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { TextField, InputAdornment, IconButton } from "@mui/material";
 import { Person, Lock, VisibilityOff, Visibility } from "@mui/icons-material";
 import { useFormik } from "formik";
@@ -142,7 +142,6 @@ const Login = () => {
                 : classes.container_form_button
             }
             type="submit"
-            data-testid="loginbtn"
           >
             {t("home:login")}
           </button>
